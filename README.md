@@ -4,10 +4,14 @@
 
 ### 1. Page with registered students(main page)
 
-1.1 Drop-down list with registered students
+* Drop-down list with registered students
 
-1.2 Search
+* Search
 
 ### 2. Form to register a student
+
+## Database design and API
+
+![alt text](db_design.png)
 
 API is described with [**swagger**](https://github.com/memeEnjoyer/student-list.git/swagger.yaml).
