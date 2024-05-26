@@ -1,0 +1,5 @@
+{
+  "database": "sqlite:/src/students.db",
+  "username": null,
+  "password": null
+}

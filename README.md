@@ -14,4 +14,4 @@
 
 ![alt text](db_design.png)
 
-API is described with [**swagger**](https://github.com/memeEnjoyer/student-list.git/swagger.yaml).
+API is described with [**swagger**](https://github.com/memeEnjoyer/student-list/swagger.yaml).

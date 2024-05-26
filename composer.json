@@ -1,0 +1,10 @@
+{
+  "autoload": {
+    "psr-4": {
+      "StudentsList\\Model\\": "src/"
+    }
+  },
+  "require": {
+    "twbs/bootstrap": "5.3.3"
+  }
+}

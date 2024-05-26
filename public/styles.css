@@ -1,0 +1,14 @@
+
+.demotable a[href^="#all"], .demotable a[href="#close"] {
+  text-decoration: none;
+  border-bottom: 1px dashed;
+}
+
+[id^="all"] {
+  position: fixed;
+}
+[id^="all"]:target + table a[href^="#all"],
+[id^="all"]:not(:target) + table tbody tr:nth-of-type(n),
+[id^="all"]:not(:target) + table a[href="#close"] {
+  display: none;
+}
