@@ -4,7 +4,7 @@
 
 ### 1. Page with registered students(main page)
 
-* Drop-down list with registered students
+* Demotable list with registered students
 
 * Search
 

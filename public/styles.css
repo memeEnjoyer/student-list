@@ -8,7 +8,6 @@
   position: fixed;
 }
 [id^="all"]:target + table a[href^="#all"],
-[id^="all"]:not(:target) + table tbody tr:nth-of-type(n),
-[id^="all"]:not(:target) + table a[href="#close"] {
+[id^="all"]:not(:target) + table tr:nth-of-type(n+1) a[href="#close"] {
   display: none;
 }

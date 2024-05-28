@@ -3,10 +3,10 @@ namespace StudentsList\Model\Student;
 
 class Student {
   // sex and residency should be passed using these constants
-  public const string SEX_MALE = 'M';
-  public const string SEX_FEMALE = 'F';
-  public const string RESIDENT = 'RESIDENT';
-  public const string NONRESIDENT = 'NONRESIDENT';
+  const string SEX_MALE = 'M';
+  const string SEX_FEMALE = 'F';
+  const string RESIDENT = 'RESIDENT';
+  const string NONRESIDENT = 'NONRESIDENT';
 
   public string $name;
   public string $surname;

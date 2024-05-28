@@ -1,22 +1,14 @@
 <?php
-namespace StudentsList\Model\DatabaseConnection;
+namespace StudentsList\Model;
+use PDO;
 
 class DatabaseConnection {
   private $pdo;
 
-  public function connect() {
-    try {
-      $configJson = file_get_contents(__DIR__ . '/../config.json');
-      $config = json_decode($configJson, true);
+  public function connect($config): PDO {
+    $this->pdo = new PDO($config["driver"] . __DIR__ . $config["database"], $config["username"], $config["password"]);
+    $this->pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
-      $this->pdo = new PDO($config["database"], $config["username"], $config["password"]);
-      $this->pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-
-      return $this->pdo;
-
-    } catch(PDOException $e) {
-
-      die($e->getMessage());
-    }
+    return $this->pdo;
   }
 }
