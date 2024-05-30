@@ -27,12 +27,16 @@
         <th>Баллов</th>
         <td colspan="3"><a href="#close">[⯅]</a><a href="#all">[⯆]</a>
       </tr>
-      <tr>
-        <th>Иван</th>
-        <th>Иванов</th>
-        <th>1010Э</th>
-        <th>180</th>
-      </tr>
+      <?php if($students): ?>
+        <?php foreach($students as $student): ?>
+          <tr>
+            <th><?=htmlspecialchars($student->name)?></th>
+            <th><?=htmlspecialchars($student->surname)?></th>
+            <th><?=htmlspecialchars($student->groupId)?></th>
+            <th><?=htmlspecialchars($student->examPoints)?></th>
+          </tr>
+        <?php endforeach; ?>
+      <?php endif; ?>
     </table>
   </body>
 </html>

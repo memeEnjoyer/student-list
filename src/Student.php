@@ -1,5 +1,5 @@
 <?php
-namespace StudentsList\Model\Student;
+namespace StudentsList\Model;
 
 class Student {
   // sex and residency should be passed using these constants
@@ -17,7 +17,7 @@ class Student {
   public string $residency;
   public int $examPoints;
 
-  function __construct(string $name, string $surname, string $groupId, int $examPoints) {
+  function __construct(string $name, string $surname, string $sex, string $groupId, string $email, int $birthYear, string $residency, int $examPoints) {
     $this->name = $name;
     $this->surname = $surname;
     $this->sex = $sex;
